@@ -70,4 +70,22 @@ help(print)
 squaredNumber = 20
 print(squaredNumber)
 
+# getting examples
+example(print)
+
+example(class)
+
+# storing data in the array
+arrayOfInteger = c(1,2,3,16,27,33,41,32,67,100,-1,0,-2,-15)
+arrayOfInteger < 50
+
+randomNumberArr = c(11,23,13,43,51,63,57,81,95,101)
+randomNumberArr > 35
+
+# AND operator
+randomNumberArr > 20 & randomNumberArr < 35
+
+# OR operator
+randomNumberArr < 20 | randomNumberArr > 35
+
 
