@@ -88,4 +88,19 @@ randomNumberArr > 20 & randomNumberArr < 35
 # OR operator
 randomNumberArr < 20 | randomNumberArr > 35
 
+# Division
+# Dividend = (quotient * divisor) + reminder
+#  it gives quotient
+16 %/% 4
+
+# it gives reminder
+16 %% 4
+21 %% 5
+
+# with decimal response
+21 / 5
+
+# without decimal response
+21 %/% 5
+
 
