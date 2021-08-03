@@ -103,4 +103,14 @@ randomNumberArr < 20 | randomNumberArr > 35
 # without decimal response
 21 %/% 5
 
+numberEg = 27
+
+if(numberEg %% 2 == 0){
+  print('Number is even')
+}else{
+  print('number is odd')
+}
+
+
+
 
