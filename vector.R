@@ -91,3 +91,46 @@ rep(cities, times = c(3, 2, 5))
 
 rep_len(c(4, 5, 6), length.out = 5)    # Resulting vector has length 5
 rep_len(c(4, 5, 6), length.out = 9)    # Resulting vector has length 9
+
+# Explicit coercion
+# perform explicit coercion where we as users decide in which type/class the data should be converted.
+
+# A range of as.*() functions allows us to explicitly convert values between different classes. E.g., as.character(1.42) will convert the numeric value 1.42 into a character "1.42". A wide range of different as.*() functions exist such as:
+
+#   as.integer()
+#   as.numeric()
+#   as.character()
+#   as.logical()
+#   as.matrix()
+
+# let `x` be an integer vector
+# with elements 0, 1, 2, 3, 4.
+(x <- 0:4)
+
+# Coerce to character
+as.character(x)
+
+# Coerce to logical
+as.logical(x)
+
+# Missing values
+# If R is not able to convert elements, it will return NA
+
+# let `x` be a character vector
+(x <- c("a", "b", "c", "d"))
+
+# Coerce to integer
+as.integer(x)
+
+#   [1] NA NA NA NA
+#   Warning message:
+#   NAs introduced by coercion 
+
+# But ...
+x <- c("1", "100", "a", "b", "33")
+as.integer(x)
+
+
+
+
+
